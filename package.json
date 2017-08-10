@@ -9,10 +9,10 @@
     },
     "dependencies": {
         "@ali/whistle.builder": "^1.2.1",
-        "whistle": "^1.4.19"
+        "whistle": "^1.5.0"
     },
     "devDependencies": {
         "electron": "^1.6.11",
-        "rollup-plugin-dot": "^1.0.2"
+        "electron-packager": "^8.7.2"
     }
 }
