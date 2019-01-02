@@ -4,11 +4,10 @@
     "version": "1.2.0",
     "scripts": {
         "dev": "./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ./",
-        "buildWin": "node ./node_modules/electron-packager/cli.js ./ ykdanmu-electron --platform=win32 --arch=x64 --electron-version=1.7.5 --out=dist/ --overwrite=true --icon=./whistle.ico",
-        "buildMac": "export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ && node ./node_modules/electron-packager/cli.js ./ ykdanmu-electron --platform=darwin --arch=all --electron-version=1.7.5 --out=dist/ --overwrite=true --icon=./whistle.icns"
+        "buildWin": "node ./node_modules/electron-packager/cli.js ./ whistleApp --platform=win32 --arch=x64 --electron-version=1.8.8 --out=dist/ --overwrite=true --icon=./whistle.ico",
+        "buildMac": "export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ && node ./node_modules/electron-packager/cli.js ./ whistleApp --platform=darwin --arch=x64 --electron-version=1.8.8 --out=dist/ --overwrite=true --icon=./whistle.icns"
     },
     "dependencies": {
-        "@ali/whistle.builder": "^1.2.2",
         "whistle": "^1.5.0"
     },
     "devDependencies": {
