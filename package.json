@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "npx electron ./",
         "buildWin": "npx electron-packager ./ whistleApp --platform=win32 --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.ico",
-        "buildMac": "export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ && npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.icns"
+        "buildMac": "npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.icns"
     },
     "dependencies": {
         "rollup-plugin-alias": "^2.0.0",
