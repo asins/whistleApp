@@ -1,18 +1,18 @@
 {
     "name": "whistleapp",
     "main": "main.js",
-    "version": "4.0.0",
+    "version": "4.5.0",
     "scripts": {
-        "dev": "./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron ./",
-        "buildWin": "node ./node_modules/electron-packager/cli.js ./ whistleApp --platform=win32 --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.ico",
-        "buildMac": "export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ && node ./node_modules/electron-packager/cli.js ./ whistleApp --platform=darwin --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.icns"
+        "dev": "npx electron ./",
+        "buildWin": "npx electron-packager ./ whistleApp --platform=win32 --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.ico",
+        "buildMac": "export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ && npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --electron-version=4.0.0 --out=dist/ --overwrite=true --icon=./whistle.icns"
     },
     "dependencies": {
-        "rollup-plugin-alias": "^1.5.1",
-        "whistle": "^1.13.11"
+        "rollup-plugin-alias": "^2.0.0",
+        "whistle": "^1.16.5"
     },
     "devDependencies": {
-        "electron": "^4.0.0",
-        "electron-packager": "^13.0.1"
+        "electron": "^6.0.7",
+        "electron-packager": "^14.0.5"
     }
 }

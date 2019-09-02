@@ -8,7 +8,15 @@ let win;
 
 function createWindow() {
     // Create the browser window.
-    win = new BrowserWindow({ width: 1100, height: 700, minWidth: 1100, minHeight: 700 });
+    win = new BrowserWindow({
+      width: 1200,
+      height: 700,
+      minWidth: 1100,
+      minHeight: 700,
+      webPreferences: {
+        nodeIntegration: true,
+      },
+    });
 
     // and load the index.html of the app.
     win.loadURL(url.format({

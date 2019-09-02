@@ -28,3 +28,4 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .build*
+dist/
