@@ -4,8 +4,8 @@
     "version": "4.5.0",
     "scripts": {
         "dev": "npx electron ./",
-        "buildWin": "npx electron-packager ./ whistleApp --platform=win32 --arch=x64 --electron-version=6.0.7 --out=dist/ --overwrite=true --icon=./whistle.ico",
-        "buildMac": "npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --electron-version=6.0.7 --out=dist/ --overwrite=true --icon=./whistle.icns"
+        "buildWin": "npx electron-packager ./ whistleApp --platform=win32 --arch=x64 --out=dist/ --overwrite=true --icon=./whistle.ico",
+        "buildMac": "npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --out=dist/ --overwrite=true --icon=./whistle.icns"
     },
     "dependencies": {
         "rollup-plugin-alias": "^2.0.0",
