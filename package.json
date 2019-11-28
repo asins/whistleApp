@@ -1,18 +1,17 @@
 {
     "name": "whistleapp",
     "main": "main.js",
-    "version": "4.5.0",
+    "version": "4.5.5",
     "scripts": {
         "dev": "npx electron ./",
         "buildWin": "npx electron-packager ./ whistleApp --platform=win32 --arch=x64 --out=dist/ --overwrite=true --icon=./whistle.ico",
         "buildMac": "npx electron-packager ./ whistleApp --platform=darwin --arch=x64 --out=dist/ --overwrite=true --icon=./whistle.icns"
     },
     "dependencies": {
-        "rollup-plugin-alias": "^2.0.0",
-        "whistle": "^1.16.5"
+        "whistle": "^2.3.5"
     },
     "devDependencies": {
-        "electron": "^6.0.7",
-        "electron-packager": "^14.0.5"
+        "electron": "^7.1.2",
+        "electron-packager": "^14.1.1"
     }
 }
